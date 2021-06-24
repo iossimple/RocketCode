@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,35 @@
 		B1288EA126799EA400F3B1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1288EA026799EA400F3B1DD /* Assets.xcassets */; };
 		B1288EA426799EA400F3B1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1288EA226799EA400F3B1DD /* LaunchScreen.storyboard */; };
 		B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EAC26799FAB00F3B1DD /* Test.swift */; };
+		B1288ECD2679AB8E00F3B1DD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB02679AB8D00F3B1DD /* GradientView.swift */; };
+		B1288ECE2679AB8E00F3B1DD /* UIButton+ImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB22679AB8D00F3B1DD /* UIButton+ImageLayout.swift */; };
+		B1288ECF2679AB8E00F3B1DD /* UIButton+NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB32679AB8D00F3B1DD /* UIButton+NetworkImage.swift */; };
+		B1288ED02679AB8E00F3B1DD /* UIButton+VerticalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB42679AB8D00F3B1DD /* UIButton+VerticalAlignment.swift */; };
+		B1288ED12679AB8E00F3B1DD /* UIColor+InitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB62679AB8D00F3B1DD /* UIColor+InitHelper.swift */; };
+		B1288ED22679AB8E00F3B1DD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB72679AB8D00F3B1DD /* UIColor+Hex.swift */; };
+		B1288ED32679AB8E00F3B1DD /* UIColor+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EB82679AB8D00F3B1DD /* UIColor+UIImage.swift */; };
+		B1288ED42679AB8E00F3B1DD /* UINib+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EBA2679AB8D00F3B1DD /* UINib+Instantiate.swift */; };
+		B1288ED52679AB8E00F3B1DD /* UIView+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EBC2679AB8D00F3B1DD /* UIView+Instantiate.swift */; };
+		B1288ED62679AB8E00F3B1DD /* UIView+LayerModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EBD2679AB8D00F3B1DD /* UIView+LayerModifiers.swift */; };
+		B1288ED72679AB8E00F3B1DD /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EBE2679AB8D00F3B1DD /* UIView+Constraints.swift */; };
+		B1288ED82679AB8E00F3B1DD /* UIView+ClearHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EBF2679AB8D00F3B1DD /* UIView+ClearHole.swift */; };
+		B1288ED92679AB8E00F3B1DD /* UIView+Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EC02679AB8D00F3B1DD /* UIView+Corners.swift */; };
+		B1288EDA2679AB8E00F3B1DD /* UIStoryboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EC22679AB8D00F3B1DD /* UIStoryboard+Instantiate.swift */; };
+		B1288EDB2679AB8E00F3B1DD /* CGSize+Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EC42679AB8D00F3B1DD /* CGSize+Change.swift */; };
+		B1288EDC2679AB8E00F3B1DD /* UIImageView+NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EC62679AB8D00F3B1DD /* UIImageView+NetworkImage.swift */; };
+		B1288EDD2679AB8E00F3B1DD /* UIViewController+OpenLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EC82679AB8D00F3B1DD /* UIViewController+OpenLink.swift */; };
+		B1288EDE2679AB8E00F3B1DD /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288ECA2679AB8D00F3B1DD /* PaddingLabel.swift */; };
+		B1288EDF2679AB8E00F3B1DD /* UIStackView+ArrangedSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288ECC2679AB8D00F3B1DD /* UIStackView+ArrangedSubviews.swift */; };
+		B1D8CF312683409A000AFD85 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1D8CF2F2683409A000AFD85 /* EmptyView.xib */; };
+		B1D8CF322683409A000AFD85 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D8CF302683409A000AFD85 /* EmptyView.swift */; };
+		B1EFB24F2684158B00B479D8 /* RocketAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB24E2684158B00B479D8 /* RocketAdmob.swift */; };
+		DB53B7C8DEAEB0232C45793F /* Pods_RocketCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6D9C1B55E9995190CD8B12 /* Pods_RocketCode.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CD48630F8142D5E8B3631C7 /* Pods-RocketCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketCode.release.xcconfig"; path = "Target Support Files/Pods-RocketCode/Pods-RocketCode.release.xcconfig"; sourceTree = "<group>"; };
+		3C8658469FECF2085CF4EBB2 /* Pods-RocketCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketCode.debug.xcconfig"; path = "Target Support Files/Pods-RocketCode/Pods-RocketCode.debug.xcconfig"; sourceTree = "<group>"; };
+		3D6D9C1B55E9995190CD8B12 /* Pods_RocketCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RocketCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1288E9426799EA300F3B1DD /* RocketCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1288E9726799EA300F3B1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1288E9B26799EA300F3B1DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +50,28 @@
 		B1288EA326799EA400F3B1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1288EA526799EA400F3B1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1288EAC26799FAB00F3B1DD /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B1288EB02679AB8D00F3B1DD /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B1288EB22679AB8D00F3B1DD /* UIButton+ImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ImageLayout.swift"; sourceTree = "<group>"; };
+		B1288EB32679AB8D00F3B1DD /* UIButton+NetworkImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NetworkImage.swift"; sourceTree = "<group>"; };
+		B1288EB42679AB8D00F3B1DD /* UIButton+VerticalAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+VerticalAlignment.swift"; sourceTree = "<group>"; };
+		B1288EB62679AB8D00F3B1DD /* UIColor+InitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+InitHelper.swift"; sourceTree = "<group>"; };
+		B1288EB72679AB8D00F3B1DD /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		B1288EB82679AB8D00F3B1DD /* UIColor+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+UIImage.swift"; sourceTree = "<group>"; };
+		B1288EBA2679AB8D00F3B1DD /* UINib+Instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+Instantiate.swift"; sourceTree = "<group>"; };
+		B1288EBC2679AB8D00F3B1DD /* UIView+Instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Instantiate.swift"; sourceTree = "<group>"; };
+		B1288EBD2679AB8D00F3B1DD /* UIView+LayerModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LayerModifiers.swift"; sourceTree = "<group>"; };
+		B1288EBE2679AB8D00F3B1DD /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		B1288EBF2679AB8D00F3B1DD /* UIView+ClearHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ClearHole.swift"; sourceTree = "<group>"; };
+		B1288EC02679AB8D00F3B1DD /* UIView+Corners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Corners.swift"; sourceTree = "<group>"; };
+		B1288EC22679AB8D00F3B1DD /* UIStoryboard+Instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiate.swift"; sourceTree = "<group>"; };
+		B1288EC42679AB8D00F3B1DD /* CGSize+Change.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Change.swift"; sourceTree = "<group>"; };
+		B1288EC62679AB8D00F3B1DD /* UIImageView+NetworkImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+NetworkImage.swift"; sourceTree = "<group>"; };
+		B1288EC82679AB8D00F3B1DD /* UIViewController+OpenLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+OpenLink.swift"; sourceTree = "<group>"; };
+		B1288ECA2679AB8D00F3B1DD /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		B1288ECC2679AB8D00F3B1DD /* UIStackView+ArrangedSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+ArrangedSubviews.swift"; sourceTree = "<group>"; };
+		B1D8CF2F2683409A000AFD85 /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		B1D8CF302683409A000AFD85 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		B1EFB24E2684158B00B479D8 /* RocketAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketAdmob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,18 +79,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB53B7C8DEAEB0232C45793F /* Pods_RocketCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		101197C25E424016E1E93546 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D6D9C1B55E9995190CD8B12 /* Pods_RocketCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B1288E8B26799EA300F3B1DD = {
 			isa = PBXGroup;
 			children = (
+				B1EFB24D2684154600B479D8 /* RocketAdmob */,
 				B1288EAB26799F8A00F3B1DD /* RocketCode */,
 				B1288E9626799EA300F3B1DD /* Demo */,
 				B1288E9526799EA300F3B1DD /* Products */,
+				FFC91B269DA3FC4168EFFC4F /* Pods */,
+				101197C25E424016E1E93546 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +131,150 @@
 			isa = PBXGroup;
 			children = (
 				B1288EAC26799FAB00F3B1DD /* Test.swift */,
+				B1288EAE2679AB8D00F3B1DD /* UI */,
 			);
 			path = RocketCode;
+			sourceTree = "<group>";
+		};
+		B1288EAE2679AB8D00F3B1DD /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B1D8CF2E26834081000AFD85 /* EmptyView */,
+				B1288EAF2679AB8D00F3B1DD /* Gradient */,
+				B1288EB12679AB8D00F3B1DD /* UIButton */,
+				B1288EB52679AB8D00F3B1DD /* UIColor */,
+				B1288EB92679AB8D00F3B1DD /* Nib */,
+				B1288EBB2679AB8D00F3B1DD /* UIView */,
+				B1288EC12679AB8D00F3B1DD /* Storyboard */,
+				B1288EC32679AB8D00F3B1DD /* CGSize */,
+				B1288EC52679AB8D00F3B1DD /* UIImageView */,
+				B1288EC72679AB8D00F3B1DD /* UIViewController */,
+				B1288EC92679AB8D00F3B1DD /* Padding */,
+				B1288ECB2679AB8D00F3B1DD /* UIStackView */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B1288EAF2679AB8D00F3B1DD /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EB02679AB8D00F3B1DD /* GradientView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		B1288EB12679AB8D00F3B1DD /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EB22679AB8D00F3B1DD /* UIButton+ImageLayout.swift */,
+				B1288EB32679AB8D00F3B1DD /* UIButton+NetworkImage.swift */,
+				B1288EB42679AB8D00F3B1DD /* UIButton+VerticalAlignment.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		B1288EB52679AB8D00F3B1DD /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EB62679AB8D00F3B1DD /* UIColor+InitHelper.swift */,
+				B1288EB72679AB8D00F3B1DD /* UIColor+Hex.swift */,
+				B1288EB82679AB8D00F3B1DD /* UIColor+UIImage.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		B1288EB92679AB8D00F3B1DD /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EBA2679AB8D00F3B1DD /* UINib+Instantiate.swift */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		B1288EBB2679AB8D00F3B1DD /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EBC2679AB8D00F3B1DD /* UIView+Instantiate.swift */,
+				B1288EBD2679AB8D00F3B1DD /* UIView+LayerModifiers.swift */,
+				B1288EBE2679AB8D00F3B1DD /* UIView+Constraints.swift */,
+				B1288EBF2679AB8D00F3B1DD /* UIView+ClearHole.swift */,
+				B1288EC02679AB8D00F3B1DD /* UIView+Corners.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		B1288EC12679AB8D00F3B1DD /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EC22679AB8D00F3B1DD /* UIStoryboard+Instantiate.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B1288EC32679AB8D00F3B1DD /* CGSize */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EC42679AB8D00F3B1DD /* CGSize+Change.swift */,
+			);
+			path = CGSize;
+			sourceTree = "<group>";
+		};
+		B1288EC52679AB8D00F3B1DD /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EC62679AB8D00F3B1DD /* UIImageView+NetworkImage.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		B1288EC72679AB8D00F3B1DD /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B1288EC82679AB8D00F3B1DD /* UIViewController+OpenLink.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		B1288EC92679AB8D00F3B1DD /* Padding */ = {
+			isa = PBXGroup;
+			children = (
+				B1288ECA2679AB8D00F3B1DD /* PaddingLabel.swift */,
+			);
+			path = Padding;
+			sourceTree = "<group>";
+		};
+		B1288ECB2679AB8D00F3B1DD /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				B1288ECC2679AB8D00F3B1DD /* UIStackView+ArrangedSubviews.swift */,
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		B1D8CF2E26834081000AFD85 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				B1D8CF302683409A000AFD85 /* EmptyView.swift */,
+				B1D8CF2F2683409A000AFD85 /* EmptyView.xib */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		B1EFB24D2684154600B479D8 /* RocketAdmob */ = {
+			isa = PBXGroup;
+			children = (
+				B1EFB24E2684158B00B479D8 /* RocketAdmob.swift */,
+			);
+			path = RocketAdmob;
+			sourceTree = "<group>";
+		};
+		FFC91B269DA3FC4168EFFC4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C8658469FECF2085CF4EBB2 /* Pods-RocketCode.debug.xcconfig */,
+				1CD48630F8142D5E8B3631C7 /* Pods-RocketCode.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +284,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1288EA826799EA400F3B1DD /* Build configuration list for PBXNativeTarget "RocketCode" */;
 			buildPhases = (
+				EC7CA6626A775403065D1700 /* [CP] Check Pods Manifest.lock */,
 				B1288E9026799EA300F3B1DD /* Sources */,
 				B1288E9126799EA300F3B1DD /* Frameworks */,
 				B1288E9226799EA300F3B1DD /* Resources */,
+				AC1D8B3BB8BDB448F3320582 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D8CF312683409A000AFD85 /* EmptyView.xib in Resources */,
 				B1288EA426799EA400F3B1DD /* LaunchScreen.storyboard in Resources */,
 				B1288EA126799EA400F3B1DD /* Assets.xcassets in Resources */,
 				B1288E9F26799EA300F3B1DD /* Main.storyboard in Resources */,
@@ -140,14 +345,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AC1D8B3BB8BDB448F3320582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketCode/Pods-RocketCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RocketCode/Pods-RocketCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RocketCode/Pods-RocketCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC7CA6626A775403065D1700 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RocketCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1288E9026799EA300F3B1DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1288ED62679AB8E00F3B1DD /* UIView+LayerModifiers.swift in Sources */,
+				B1288EDF2679AB8E00F3B1DD /* UIStackView+ArrangedSubviews.swift in Sources */,
+				B1288EDC2679AB8E00F3B1DD /* UIImageView+NetworkImage.swift in Sources */,
 				B1288E9C26799EA300F3B1DD /* ViewController.swift in Sources */,
+				B1D8CF322683409A000AFD85 /* EmptyView.swift in Sources */,
+				B1288ED42679AB8E00F3B1DD /* UINib+Instantiate.swift in Sources */,
+				B1288ED72679AB8E00F3B1DD /* UIView+Constraints.swift in Sources */,
 				B1288E9826799EA300F3B1DD /* AppDelegate.swift in Sources */,
+				B1288ECF2679AB8E00F3B1DD /* UIButton+NetworkImage.swift in Sources */,
+				B1288ED82679AB8E00F3B1DD /* UIView+ClearHole.swift in Sources */,
+				B1288ED22679AB8E00F3B1DD /* UIColor+Hex.swift in Sources */,
+				B1288ECD2679AB8E00F3B1DD /* GradientView.swift in Sources */,
+				B1288ED32679AB8E00F3B1DD /* UIColor+UIImage.swift in Sources */,
+				B1288ECE2679AB8E00F3B1DD /* UIButton+ImageLayout.swift in Sources */,
+				B1288ED02679AB8E00F3B1DD /* UIButton+VerticalAlignment.swift in Sources */,
 				B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */,
+				B1288EDD2679AB8E00F3B1DD /* UIViewController+OpenLink.swift in Sources */,
+				B1288EDE2679AB8E00F3B1DD /* PaddingLabel.swift in Sources */,
+				B1288EDA2679AB8E00F3B1DD /* UIStoryboard+Instantiate.swift in Sources */,
+				B1288EDB2679AB8E00F3B1DD /* CGSize+Change.swift in Sources */,
+				B1288ED12679AB8E00F3B1DD /* UIColor+InitHelper.swift in Sources */,
+				B1288ED52679AB8E00F3B1DD /* UIView+Instantiate.swift in Sources */,
+				B1288ED92679AB8E00F3B1DD /* UIView+Corners.swift in Sources */,
+				B1EFB24F2684158B00B479D8 /* RocketAdmob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +559,7 @@
 		};
 		B1288EA926799EA400F3B1DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8658469FECF2085CF4EBB2 /* Pods-RocketCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +571,63 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ncc.RocketCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -311,6 +637,7 @@
 		};
 		B1288EAA26799EA400F3B1DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD48630F8142D5E8B3631C7 /* Pods-RocketCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +648,63 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ncc.RocketCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

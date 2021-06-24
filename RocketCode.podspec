@@ -65,10 +65,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  # spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "11.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "RocketCode", "RocketCode/**/*.{swift}"
+  spec.source_files  = "RocketCode", "RocketCode/**/*.{swift,xib}"
   spec.exclude_files = "RocketCode/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -135,5 +135,11 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  
+  spec.dependency "EasyAnchor"
+  spec.dependency "SDWebImage"
+  spec.dependency "SVProgressHUD"
+
+  spec.swift_version = "5.4"
 
 end
