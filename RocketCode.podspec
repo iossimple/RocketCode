@@ -7,42 +7,42 @@
 #
 
 Pod::Spec.new do |spec|
-
+  
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  These will help people to find your library, and whilst it
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-
+  
   spec.name         = "RocketCode"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of RocketCode."
-
+  
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                   A long description of RocketCode.
-                   DESC
-
+  A long description of RocketCode.
+  DESC
+  
   spec.homepage     = "https://github.com/nocoffeecode/SwiftRocketCode"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
+  
+  
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Licensing your code is important. See https://choosealicense.com for more info.
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-
+  
   # spec.license      = "MIT (example)"
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
+  
+  
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
@@ -52,38 +52,38 @@ Pod::Spec.new do |spec|
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
   #
-
+  
   spec.author             = { "Viet Nguyen Tran" => "vietstone.ng@gmail.com" }
   # Or just: spec.author    = "Viet Nguyen Tran"
   # spec.authors            = { "Viet Nguyen Tran" => "vietstone.ng@gmail.com" }
   # spec.social_media_url   = "https://twitter.com/Viet Nguyen Tran"
-
+  
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
-
+  
   # spec.platform     = :ios
   # spec.platform     = :ios, "11.0"
-
+  
   #  When using multiple platforms
   spec.ios.deployment_target = "11.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
-
-
+  
+  
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
+  
   # spec.source       = { :git => "https://github.com/nocoffeecode/SwiftRocketCode", :tag => "#{spec.version}" }
   spec.source       = { :git => "file://" + __dir__, :tag => "#{spec.version}" }
-
-
+  
+  
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  CocoaPods is smart about how it includes source code. For source files
@@ -91,13 +91,13 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-#  spec.source_files  = "RocketCode", "RocketCode/**/*.{swift,xib}"
-#  spec.exclude_files = "RocketCode/Exclude"
-
+  
+  #  spec.source_files  = "RocketCode", "RocketCode/**/*.{swift,xib}"
+  #  spec.exclude_files = "RocketCode/Exclude"
+  
   # spec.public_header_files = "Classes/**/*.h"
-
-
+  
+  
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
@@ -105,41 +105,41 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-
+  
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
-
+  
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
+  
+  
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+  
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-
+  
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
-
-
+  
+  
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If your library depends on compiler flags you can set them in the xcconfig hash
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
-
+  
   # spec.requires_arc = true
-
+  
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   
-#  spec.dependency "EasyAnchor"
-#  spec.dependency "SDWebImage"
-#  spec.dependency "SVProgressHUD"
-
+  #  spec.dependency "EasyAnchor"
+  #  spec.dependency "SDWebImage"
+  #  spec.dependency "SVProgressHUD"
+  
   spec.swift_version = "5.4"
   
   spec.default_subspec = 'Core'
@@ -152,11 +152,19 @@ Pod::Spec.new do |spec|
     core.dependency "SVProgressHUD"
   end
   
-  spec.subspec 'Admob' do |admob|
-    admob.source_files  = "RocketAdmob", "RocketAdmob/**/*.{swift,xib}"
-    admob.exclude_files = "RocketAdmob/Exclude"
-    admob.dependency "RocketCode/Core"
-    admob.dependency "Google-Mobile-Ads-SDK"
+#  spec.subspec 'Admob' do |admob|
+#    admob.source_files  = "RocketAdmob", "RocketAdmob/**/*.{swift,xib}"
+#    admob.exclude_files = "RocketAdmob/Exclude"
+#    admob.dependency "RocketCode/Core"
+#    admob.dependency "Google-Mobile-Ads-SDK"
+#  end
+  
+  spec.subspec 'IAP' do |iap|
+    iap.source_files  = "RocketIAP", "RocketIAP/**/*.{swift,xib}"
+    iap.exclude_files = "RocketIAP/Exclude"
+    iap.dependency "StoreKit"
+    iap.dependency "TPInAppReceipt"
+    iap.dependency "SwiftNotificationCenter"
   end
   
 end

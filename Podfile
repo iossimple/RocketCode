@@ -11,4 +11,7 @@ target 'RocketCode' do
   pod 'SVProgressHUD'
   
   pod 'Google-Mobile-Ads-SDK'
+  
+  pod 'TPInAppReceipt'
+  pod 'SwiftNotificationCenter'
 end

@@ -1,4 +1,5 @@
 PODS:
+  - ASN1Swift (1.2.3)
   - EasyAnchor (3.0.0)
   - Google-Mobile-Ads-SDK (8.5.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
@@ -44,15 +45,23 @@ PODS:
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
   - SVProgressHUD (2.2.5)
+  - SwiftNotificationCenter (1.0.4)
+  - TPInAppReceipt (3.2.1):
+    - TPInAppReceipt/Core (= 3.2.1)
+  - TPInAppReceipt/Core (3.2.1):
+    - ASN1Swift (~> 1.2.3)
 
 DEPENDENCIES:
   - EasyAnchor
   - Google-Mobile-Ads-SDK
   - SDWebImage
   - SVProgressHUD
+  - SwiftNotificationCenter
+  - TPInAppReceipt
 
 SPEC REPOS:
   trunk:
+    - ASN1Swift
     - EasyAnchor
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
@@ -62,8 +71,11 @@ SPEC REPOS:
     - PromisesObjC
     - SDWebImage
     - SVProgressHUD
+    - SwiftNotificationCenter
+    - TPInAppReceipt
 
 SPEC CHECKSUMS:
+  ASN1Swift: 73ba94f1d97c1c1d059d180708ad42845aeac4f9
   EasyAnchor: ee8906196ef3db2ef1492a33d4c4c4a2e055531e
   Google-Mobile-Ads-SDK: 6f5c41bf73db1656e5b203ba9c31e3d0899a128d
   GoogleAppMeasurement: 9ff7b9e23cced93a5a41736c09bdeb5b5b7fb111
@@ -73,7 +85,9 @@ SPEC CHECKSUMS:
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftNotificationCenter: 760386da2ce03d3594cb5e96d1e22ec80b44b46f
+  TPInAppReceipt: dfc7e0a1b6ab78eb16eca66b43e3f4fb71513c13
 
-PODFILE CHECKSUM: 26ac1fe73c7c3ed685fd76fbf7eaa8620a338b84
+PODFILE CHECKSUM: bba9d16484d71898f529b7462f1fd888db627c04
 
 COCOAPODS: 1.10.1

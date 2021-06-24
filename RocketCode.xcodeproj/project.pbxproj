@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B125330C26842FAC009D08A5 /* RocketIAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125330B26842FAC009D08A5 /* RocketIAP.swift */; };
 		B1288E9826799EA300F3B1DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288E9726799EA300F3B1DD /* AppDelegate.swift */; };
 		B1288E9C26799EA300F3B1DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288E9B26799EA300F3B1DD /* ViewController.swift */; };
 		B1288E9F26799EA300F3B1DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1288E9D26799EA300F3B1DD /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		1CD48630F8142D5E8B3631C7 /* Pods-RocketCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketCode.release.xcconfig"; path = "Target Support Files/Pods-RocketCode/Pods-RocketCode.release.xcconfig"; sourceTree = "<group>"; };
 		3C8658469FECF2085CF4EBB2 /* Pods-RocketCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RocketCode.debug.xcconfig"; path = "Target Support Files/Pods-RocketCode/Pods-RocketCode.debug.xcconfig"; sourceTree = "<group>"; };
 		3D6D9C1B55E9995190CD8B12 /* Pods_RocketCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RocketCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B125330B26842FAC009D08A5 /* RocketIAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketIAP.swift; sourceTree = "<group>"; };
 		B1288E9426799EA300F3B1DD /* RocketCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1288E9726799EA300F3B1DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1288E9B26799EA300F3B1DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,9 +120,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B125330A26842F9A009D08A5 /* RocketIAP */ = {
+			isa = PBXGroup;
+			children = (
+				B125330B26842FAC009D08A5 /* RocketIAP.swift */,
+			);
+			path = RocketIAP;
+			sourceTree = "<group>";
+		};
 		B1288E8B26799EA300F3B1DD = {
 			isa = PBXGroup;
 			children = (
+				B125330A26842F9A009D08A5 /* RocketIAP */,
 				B1EFB24D2684154600B479D8 /* RocketAdmob */,
 				B1288EAB26799F8A00F3B1DD /* RocketCode */,
 				B1288E9626799EA300F3B1DD /* Demo */,
@@ -485,6 +496,7 @@
 				B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */,
 				B1EFB2922684171300B479D8 /* UIView+Constraints.swift in Sources */,
 				B1EFB2832684171300B479D8 /* UIImage+Scale.swift in Sources */,
+				B125330C26842FAC009D08A5 /* RocketIAP.swift in Sources */,
 				B1EFB28F2684171300B479D8 /* UINib+Instantiate.swift in Sources */,
 				B1EFB28D2684171300B479D8 /* UIColor+UIImage.swift in Sources */,
 				B1EFB2872684171300B479D8 /* UIButton+ImageLayout.swift in Sources */,
