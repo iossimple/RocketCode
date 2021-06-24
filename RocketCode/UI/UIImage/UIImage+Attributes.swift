@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /// Checks if image has alpha component
     var hasAlpha: Bool {
       let result: Bool

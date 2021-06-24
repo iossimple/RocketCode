@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /// Convert to data
     func toData(compressionQuality: CGFloat = 1.0) -> Data? {
         return compressionQuality == 1.0 && hasAlpha

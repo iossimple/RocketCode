@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "RocketCode"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A short description of RocketCode."
 
   # This description is used to generate tags and improve search results.
@@ -153,8 +153,9 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'Admob' do |admob|
-    admob.source_files  = "RocketAdmob/**/*.{swift,xib}"
+    admob.source_files  = "RocketAdmob", "RocketAdmob/**/*.{swift,xib}"
     admob.exclude_files = "RocketAdmob/Exclude"
+    admob.dependency "RocketCode/Core"
     admob.dependency "Google-Mobile-Ads-SDK"
   end
   
