@@ -6,7 +6,9 @@ target 'RocketCode' do
   use_frameworks!
 
   # Pods for RocketCode
-  pod 'Google-Mobile-Ads-SDK'
   pod 'SDWebImage'
   pod 'EasyAnchor'
+  pod 'SVProgressHUD'
+  
+  pod 'Google-Mobile-Ads-SDK'
 end

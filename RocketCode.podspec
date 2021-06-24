@@ -92,8 +92,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "RocketCode", "RocketCode/**/*.{swift,xib}"
-  spec.exclude_files = "RocketCode/Exclude"
+#  spec.source_files  = "RocketCode", "RocketCode/**/*.{swift,xib}"
+#  spec.exclude_files = "RocketCode/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -136,10 +136,26 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
   
-  spec.dependency "EasyAnchor"
-  spec.dependency "SDWebImage"
-  spec.dependency "SVProgressHUD"
+#  spec.dependency "EasyAnchor"
+#  spec.dependency "SDWebImage"
+#  spec.dependency "SVProgressHUD"
 
   spec.swift_version = "5.4"
-
+  
+  spec.default_subspec = 'Core'
+  
+  spec.subspec 'Core' do |core|
+    core.source_files  = "RocketCode", "RocketCode/**/*.{swift,xib}"
+    core.exclude_files = "RocketCode/Exclude"
+    core.dependency "EasyAnchor"
+    core.dependency "SDWebImage"
+    core.dependency "SVProgressHUD"
+  end
+  
+  spec.subspec 'Admob' do |admob|
+    admob.source_files  = "RocketAdmob/**/*.{swift,xib}"
+    admob.exclude_files = "RocketAdmob/Exclude"
+    admob.dependency "Google-Mobile-Ads-SDK"
+  end
+  
 end
