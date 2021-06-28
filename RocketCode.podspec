@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
   
   spec.name         = "RocketCode"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A short description of RocketCode."
   
   # This description is used to generate tags and improve search results.
@@ -150,6 +150,10 @@ Pod::Spec.new do |spec|
     core.dependency "EasyAnchor"
     core.dependency "SDWebImage"
     core.dependency "SVProgressHUD"
+    core.dependency "Cache"
+    core.dependency "FCFileManager"
+    core.dependency "Bond"
+    core.dependency "ReactiveKit"
   end
   
 #  spec.subspec 'Admob' do |admob|
@@ -159,12 +163,12 @@ Pod::Spec.new do |spec|
 #    admob.dependency "Google-Mobile-Ads-SDK"
 #  end
   
-  spec.subspec 'IAP' do |iap|
-    iap.source_files  = "RocketIAP", "RocketIAP/**/*.{swift,xib}"
-    iap.exclude_files = "RocketIAP/Exclude"
-    iap.dependency "StoreKit"
-    iap.dependency "TPInAppReceipt"
-    iap.dependency "SwiftNotificationCenter"
-  end
+#  spec.subspec 'IAP' do |iap|
+#    iap.source_files  = "RocketIAP", "RocketIAP/**/*.{swift,xib}"
+#    iap.exclude_files = "RocketIAP/Exclude"
+#    iap.dependency "StoreKit"
+#    iap.dependency "TPInAppReceipt"
+#    iap.dependency "SwiftNotificationCenter"
+#  end
   
 end

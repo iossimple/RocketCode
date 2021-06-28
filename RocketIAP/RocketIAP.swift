@@ -10,19 +10,19 @@ import StoreKit
 import TPInAppReceipt
 import SwiftNotificationCenter
 
-public protocol IAPServiceUpdate {
-    func updatePremiumStatus(_ iapService: IAPService)
-    func updateProductList(_ iapService: IAPService)
+public protocol IAPUpdate {
+    func iapUpdatePremiumStatus(_ iapService: RocketIAP)
+    func iapUpdateProductList(_ iapService: RocketIAP)
     //  func updatePurchasingStatus(_ iapService: IAPService)
 }
 
 public extension String {
     func packageIDtoIAPPriceString() -> String {
-        return IAPService.shared.convertPackageIDtoPriceString(self)
+        return RocketIAP.shared.convertPackageIDtoPriceString(self)
     }
 }
 
-extension IAPService {
+extension RocketIAP {
     func convertPackageIDtoPriceString(_ packageID: String) -> String {
         let matchingProduct = self.availablePackages.first { $0.productIdentifier == packageID }
         guard let p = matchingProduct
@@ -36,8 +36,8 @@ extension IAPService {
     }
 }
 
-public class IAPService: NSObject {
-    public static let shared = IAPService()
+public class RocketIAP: NSObject {
+    public static let shared = RocketIAP()
     
     public func startWithIDs(_ ids: [String]) {
         validateReceipt()
@@ -55,7 +55,7 @@ public class IAPService: NSObject {
     }
     private var isReceiptValidating: Bool = false {
         didSet {
-            Broadcaster.notify(IAPServiceUpdate.self) { [unowned self] in $0.updatePremiumStatus(self)
+            Broadcaster.notify(IAPUpdate.self) { [unowned self] in $0.iapUpdatePremiumStatus(self)
             }
         }
     }
@@ -76,7 +76,7 @@ public class IAPService: NSObject {
     private var productsInfo: (availableList: [SKProduct], invalidInputIDs: [String]) = ([], [])
     private var isProductListLoading: Bool = false {
         didSet {
-            Broadcaster.notify(IAPServiceUpdate.self) { [unowned self] in $0.updateProductList(self)
+            Broadcaster.notify(IAPUpdate.self) { [unowned self] in $0.iapUpdateProductList(self)
             }
         }
     }
@@ -105,7 +105,7 @@ public class IAPService: NSObject {
 //      - ok & no product -> free
 //      - failed -> somthing wrong (connection, hacked, ...) -> free
 
-private extension IAPService {
+private extension RocketIAP {
     
     func validateReceipt() {
         // ok: -> update status
@@ -145,7 +145,7 @@ private extension IAPService {
 }
 
 // Get information about Subscription Products
-extension IAPService: SKProductsRequestDelegate, SKRequestDelegate {
+extension RocketIAP: SKProductsRequestDelegate, SKRequestDelegate {
     private func loadAppStoreProductInfo(inputIDs: [String]) {
         productsRequest = SKProductsRequest(productIdentifiers: Set(inputIDs))
         productsRequest.delegate = self
@@ -167,7 +167,7 @@ extension IAPService: SKProductsRequestDelegate, SKRequestDelegate {
 }
 
 // Purchasing
-extension IAPService: SKPaymentTransactionObserver {
+extension RocketIAP: SKPaymentTransactionObserver {
     public func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
         for transaction in transactions {
             switch transaction.transactionState {
@@ -186,9 +186,4 @@ extension IAPService: SKPaymentTransactionObserver {
         }
     }
 }
-
-class RocketIAP {
-    
-}
-
 

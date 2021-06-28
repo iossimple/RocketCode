@@ -1,5 +1,5 @@
 //
-//  UIButton+VerticalAlignment.swift
+//  UIButton+ImageLayout.swift
 //  sample-id
 //
 //  Created by Viet Nguyen Tran on 2021-06-09.
@@ -8,12 +8,17 @@
 import UIKit
 
 public extension UIButton {
+    func setImageContentMode(_ mode: UIView.ContentMode) {
+        contentVerticalAlignment = .fill
+        contentHorizontalAlignment = .fill
+        imageView?.contentMode = mode
+    }
     
     // https://geek-is-stupid.github.io/2016-08-21-how-to-align-vertical-image-and-title-in-an-uibutton/
-    func alignImageAndTitleVertically(padding: CGFloat = 4.0) {
+    func verticalAlign(spacing: CGFloat = 4.0) {
         let imageSize = imageView!.frame.size
         let titleSize = titleLabel!.frame.size
-        let totalHeight = imageSize.height + titleSize.height + padding
+        let totalHeight = imageSize.height + titleSize.height + spacing
         
         imageEdgeInsets = UIEdgeInsets(
             top: -(totalHeight - imageSize.height),
@@ -28,5 +33,13 @@ public extension UIButton {
             bottom: -(totalHeight - titleSize.height),
             right: 0
         )
+    }
+    
+    func spacing(_ value: CGFloat) {
+        var contentInsets = contentEdgeInsets
+        contentInsets.right += value
+        
+        contentEdgeInsets = contentInsets
+        titleEdgeInsets = UIEdgeInsets.right(0-value)
     }
 }

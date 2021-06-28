@@ -1,6 +1,12 @@
 PODS:
   - ASN1Swift (1.2.3)
+  - Bond (7.8.1):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Cache (6.0.0)
+  - Differ (1.4.5)
   - EasyAnchor (3.0.0)
+  - FCFileManager (1.0.20)
   - Google-Mobile-Ads-SDK (8.5.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -41,6 +47,7 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - ReactiveKit (3.17.4)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
@@ -52,8 +59,12 @@ PODS:
     - ASN1Swift (~> 1.2.3)
 
 DEPENDENCIES:
+  - Bond
+  - Cache
   - EasyAnchor
+  - FCFileManager
   - Google-Mobile-Ads-SDK
+  - ReactiveKit
   - SDWebImage
   - SVProgressHUD
   - SwiftNotificationCenter
@@ -62,13 +73,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - ASN1Swift
+    - Bond
+    - Cache
+    - Differ
     - EasyAnchor
+    - FCFileManager
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
     - PromisesObjC
+    - ReactiveKit
     - SDWebImage
     - SVProgressHUD
     - SwiftNotificationCenter
@@ -76,18 +92,23 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ASN1Swift: 73ba94f1d97c1c1d059d180708ad42845aeac4f9
+  Bond: 87075c7f20f37ea3e73dc7057fce839787bf46eb
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
   EasyAnchor: ee8906196ef3db2ef1492a33d4c4c4a2e055531e
+  FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
   Google-Mobile-Ads-SDK: 6f5c41bf73db1656e5b203ba9c31e3d0899a128d
   GoogleAppMeasurement: 9ff7b9e23cced93a5a41736c09bdeb5b5b7fb111
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: f8a43108b38a68eebe8b3540e1f4f2d28843ce20
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  ReactiveKit: f9f9e079efa39312c597bf1508ef4810d111ce76
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftNotificationCenter: 760386da2ce03d3594cb5e96d1e22ec80b44b46f
   TPInAppReceipt: dfc7e0a1b6ab78eb16eca66b43e3f4fb71513c13
 
-PODFILE CHECKSUM: bba9d16484d71898f529b7462f1fd888db627c04
+PODFILE CHECKSUM: fb598df97f1bb5d76ae6291f478e1d7dddfe876f
 
 COCOAPODS: 1.10.1

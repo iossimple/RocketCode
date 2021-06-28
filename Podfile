@@ -9,6 +9,10 @@ target 'RocketCode' do
   pod 'SDWebImage'
   pod 'EasyAnchor'
   pod 'SVProgressHUD'
+  pod 'Bond'
+  pod 'ReactiveKit'
+  pod 'FCFileManager'
+  pod 'Cache'
   
   pod 'Google-Mobile-Ads-SDK'
   

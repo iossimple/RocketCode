@@ -14,6 +14,10 @@
 		B1288EA126799EA400F3B1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1288EA026799EA400F3B1DD /* Assets.xcassets */; };
 		B1288EA426799EA400F3B1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1288EA226799EA400F3B1DD /* LaunchScreen.storyboard */; };
 		B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EAC26799FAB00F3B1DD /* Test.swift */; };
+		B12F06302689572B009D910F /* DiskStorage+Initiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F062F2689572B009D910F /* DiskStorage+Initiate.swift */; };
+		B12F06322689573A009D910F /* OfflineListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F06312689573A009D910F /* OfflineListRepository.swift */; };
+		B12F0634268957D0009D910F /* RocketCode.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B12F0633268957D0009D910F /* RocketCode.podspec */; };
+		B1AAB0CA2684DFBA0064E8FF /* String+Swifty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1AAB0C92684DFBA0064E8FF /* String+Swifty.swift */; };
 		B1EFB24F2684158B00B479D8 /* RocketAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB24E2684158B00B479D8 /* RocketAdmob.swift */; };
 		B1EFB2812684171300B479D8 /* UIImage+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2522684171300B479D8 /* UIImage+Attributes.swift */; };
 		B1EFB2822684171300B479D8 /* UIImage+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2532684171300B479D8 /* UIImage+Data.swift */; };
@@ -21,9 +25,8 @@
 		B1EFB2842684171300B479D8 /* BackgroundGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2562684171300B479D8 /* BackgroundGradientButton.swift */; };
 		B1EFB2852684171300B479D8 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2572684171300B479D8 /* GradientView.swift */; };
 		B1EFB2862684171300B479D8 /* UIApplication+OpenSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2592684171300B479D8 /* UIApplication+OpenSettings.swift */; };
-		B1EFB2872684171300B479D8 /* UIButton+ImageLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB25B2684171300B479D8 /* UIButton+ImageLayout.swift */; };
+		B1EFB2872684171300B479D8 /* UIButton+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB25B2684171300B479D8 /* UIButton+Layout.swift */; };
 		B1EFB2882684171300B479D8 /* UIButton+NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB25C2684171300B479D8 /* UIButton+NetworkImage.swift */; };
-		B1EFB2892684171300B479D8 /* UIButton+VerticalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB25D2684171300B479D8 /* UIButton+VerticalAlignment.swift */; };
 		B1EFB28A2684171300B479D8 /* VerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB25E2684171300B479D8 /* VerticalButton.swift */; };
 		B1EFB28B2684171300B479D8 /* UIColor+InitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2602684171300B479D8 /* UIColor+InitHelper.swift */; };
 		B1EFB28C2684171300B479D8 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EFB2612684171300B479D8 /* UIColor+Hex.swift */; };
@@ -64,6 +67,10 @@
 		B1288EA326799EA400F3B1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1288EA526799EA400F3B1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1288EAC26799FAB00F3B1DD /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		B12F062F2689572B009D910F /* DiskStorage+Initiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DiskStorage+Initiate.swift"; sourceTree = "<group>"; };
+		B12F06312689573A009D910F /* OfflineListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineListRepository.swift; sourceTree = "<group>"; };
+		B12F0633268957D0009D910F /* RocketCode.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = RocketCode.podspec; sourceTree = "<group>"; };
+		B1AAB0C92684DFBA0064E8FF /* String+Swifty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Swifty.swift"; sourceTree = "<group>"; };
 		B1EFB24E2684158B00B479D8 /* RocketAdmob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketAdmob.swift; sourceTree = "<group>"; };
 		B1EFB2522684171300B479D8 /* UIImage+Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Attributes.swift"; sourceTree = "<group>"; };
 		B1EFB2532684171300B479D8 /* UIImage+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Data.swift"; sourceTree = "<group>"; };
@@ -71,9 +78,8 @@
 		B1EFB2562684171300B479D8 /* BackgroundGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundGradientButton.swift; sourceTree = "<group>"; };
 		B1EFB2572684171300B479D8 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B1EFB2592684171300B479D8 /* UIApplication+OpenSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+OpenSettings.swift"; sourceTree = "<group>"; };
-		B1EFB25B2684171300B479D8 /* UIButton+ImageLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ImageLayout.swift"; sourceTree = "<group>"; };
+		B1EFB25B2684171300B479D8 /* UIButton+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Layout.swift"; sourceTree = "<group>"; };
 		B1EFB25C2684171300B479D8 /* UIButton+NetworkImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+NetworkImage.swift"; sourceTree = "<group>"; };
-		B1EFB25D2684171300B479D8 /* UIButton+VerticalAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+VerticalAlignment.swift"; sourceTree = "<group>"; };
 		B1EFB25E2684171300B479D8 /* VerticalButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalButton.swift; sourceTree = "<group>"; };
 		B1EFB2602684171300B479D8 /* UIColor+InitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+InitHelper.swift"; sourceTree = "<group>"; };
 		B1EFB2612684171300B479D8 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 		B1288E8B26799EA300F3B1DD = {
 			isa = PBXGroup;
 			children = (
+				B12F0633268957D0009D910F /* RocketCode.podspec */,
 				B125330A26842F9A009D08A5 /* RocketIAP */,
 				B1EFB24D2684154600B479D8 /* RocketAdmob */,
 				B1288EAB26799F8A00F3B1DD /* RocketCode */,
@@ -165,10 +172,45 @@
 		B1288EAB26799F8A00F3B1DD /* RocketCode */ = {
 			isa = PBXGroup;
 			children = (
+				B1AAB0C72684DF920064E8FF /* Foundation */,
 				B1EFB2502684171300B479D8 /* UI */,
 				B1288EAC26799FAB00F3B1DD /* Test.swift */,
 			);
 			path = RocketCode;
+			sourceTree = "<group>";
+		};
+		B12F062D26895705009D910F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B12F062F2689572B009D910F /* DiskStorage+Initiate.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B12F062E2689570F009D910F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B12F06312689573A009D910F /* OfflineListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B1AAB0C72684DF920064E8FF /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				B12F062E2689570F009D910F /* Repository */,
+				B12F062D26895705009D910F /* Storage */,
+				B1AAB0C82684DF9D0064E8FF /* String */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		B1AAB0C82684DF9D0064E8FF /* String */ = {
+			isa = PBXGroup;
+			children = (
+				B1AAB0C92684DFBA0064E8FF /* String+Swifty.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		B1EFB24D2684154600B479D8 /* RocketAdmob */ = {
@@ -233,9 +275,8 @@
 		B1EFB25A2684171300B479D8 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
-				B1EFB25B2684171300B479D8 /* UIButton+ImageLayout.swift */,
+				B1EFB25B2684171300B479D8 /* UIButton+Layout.swift */,
 				B1EFB25C2684171300B479D8 /* UIButton+NetworkImage.swift */,
-				B1EFB25D2684171300B479D8 /* UIButton+VerticalAlignment.swift */,
 				B1EFB25E2684171300B479D8 /* VerticalButton.swift */,
 			);
 			path = UIButton;
@@ -424,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1EFB29C2684171300B479D8 /* EmptyView.xib in Resources */,
+				B12F0634268957D0009D910F /* RocketCode.podspec in Resources */,
 				B1288EA426799EA400F3B1DD /* LaunchScreen.storyboard in Resources */,
 				B1288EA126799EA400F3B1DD /* Assets.xcassets in Resources */,
 				B1288E9F26799EA300F3B1DD /* Main.storyboard in Resources */,
@@ -491,6 +533,7 @@
 				B1EFB28B2684171300B479D8 /* UIColor+InitHelper.swift in Sources */,
 				B1EFB29A2684171300B479D8 /* UIViewController+LoadingView.swift in Sources */,
 				B1EFB2912684171300B479D8 /* UIView+LayerModifiers.swift in Sources */,
+				B12F06322689573A009D910F /* OfflineListRepository.swift in Sources */,
 				B1288E9826799EA300F3B1DD /* AppDelegate.swift in Sources */,
 				B1EFB2842684171300B479D8 /* BackgroundGradientButton.swift in Sources */,
 				B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */,
@@ -498,13 +541,15 @@
 				B1EFB2832684171300B479D8 /* UIImage+Scale.swift in Sources */,
 				B125330C26842FAC009D08A5 /* RocketIAP.swift in Sources */,
 				B1EFB28F2684171300B479D8 /* UINib+Instantiate.swift in Sources */,
+				B12F06302689572B009D910F /* DiskStorage+Initiate.swift in Sources */,
 				B1EFB28D2684171300B479D8 /* UIColor+UIImage.swift in Sources */,
-				B1EFB2872684171300B479D8 /* UIButton+ImageLayout.swift in Sources */,
+				B1EFB2872684171300B479D8 /* UIButton+Layout.swift in Sources */,
 				B1EFB2942684171300B479D8 /* UIView+Corners.swift in Sources */,
 				B1EFB29D2684171300B479D8 /* EmptyView.swift in Sources */,
 				B1EFB29F2684171300B479D8 /* UIStackView+ArrangedSubviews.swift in Sources */,
 				B1EFB29E2684171300B479D8 /* PaddingLabel.swift in Sources */,
 				B1EFB28C2684171300B479D8 /* UIColor+Hex.swift in Sources */,
+				B1AAB0CA2684DFBA0064E8FF /* String+Swifty.swift in Sources */,
 				B1EFB2882684171300B479D8 /* UIButton+NetworkImage.swift in Sources */,
 				B1EFB2A3268417D300B479D8 /* UIScreen+Size.swift in Sources */,
 				B1EFB28A2684171300B479D8 /* VerticalButton.swift in Sources */,
@@ -515,7 +560,6 @@
 				B1EFB2982684171300B479D8 /* UIImageView+NetworkImage.swift in Sources */,
 				B1EFB2852684171300B479D8 /* GradientView.swift in Sources */,
 				B1EFB2992684171300B479D8 /* UIViewController+Container.swift in Sources */,
-				B1EFB2892684171300B479D8 /* UIButton+VerticalAlignment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
