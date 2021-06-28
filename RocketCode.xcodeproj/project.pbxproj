@@ -13,7 +13,6 @@
 		B1288E9F26799EA300F3B1DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1288E9D26799EA300F3B1DD /* Main.storyboard */; };
 		B1288EA126799EA400F3B1DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1288EA026799EA400F3B1DD /* Assets.xcassets */; };
 		B1288EA426799EA400F3B1DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1288EA226799EA400F3B1DD /* LaunchScreen.storyboard */; };
-		B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1288EAC26799FAB00F3B1DD /* Test.swift */; };
 		B12F06302689572B009D910F /* DiskStorage+Initiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F062F2689572B009D910F /* DiskStorage+Initiate.swift */; };
 		B12F06322689573A009D910F /* OfflineListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F06312689573A009D910F /* OfflineListRepository.swift */; };
 		B12F0634268957D0009D910F /* RocketCode.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B12F0633268957D0009D910F /* RocketCode.podspec */; };
@@ -66,7 +65,6 @@
 		B1288EA026799EA400F3B1DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1288EA326799EA400F3B1DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1288EA526799EA400F3B1DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1288EAC26799FAB00F3B1DD /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B12F062F2689572B009D910F /* DiskStorage+Initiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DiskStorage+Initiate.swift"; sourceTree = "<group>"; };
 		B12F06312689573A009D910F /* OfflineListRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineListRepository.swift; sourceTree = "<group>"; };
 		B12F0633268957D0009D910F /* RocketCode.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = RocketCode.podspec; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 			children = (
 				B1AAB0C72684DF920064E8FF /* Foundation */,
 				B1EFB2502684171300B479D8 /* UI */,
-				B1288EAC26799FAB00F3B1DD /* Test.swift */,
 			);
 			path = RocketCode;
 			sourceTree = "<group>";
@@ -536,7 +533,6 @@
 				B12F06322689573A009D910F /* OfflineListRepository.swift in Sources */,
 				B1288E9826799EA300F3B1DD /* AppDelegate.swift in Sources */,
 				B1EFB2842684171300B479D8 /* BackgroundGradientButton.swift in Sources */,
-				B1288EAD26799FAB00F3B1DD /* Test.swift in Sources */,
 				B1EFB2922684171300B479D8 /* UIView+Constraints.swift in Sources */,
 				B1EFB2832684171300B479D8 /* UIImage+Scale.swift in Sources */,
 				B125330C26842FAC009D08A5 /* RocketIAP.swift in Sources */,
