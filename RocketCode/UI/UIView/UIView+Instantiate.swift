@@ -12,7 +12,7 @@ public extension UIView {
         nibName: String? = nil,
         owner: Any? = nil,
         bundle: Bundle = .main
-    ) -> UIView {
+    ) -> Self {
         let nibName = nibName ?? String(describing: Self.self)
         return UINib.instantiateView(
             ofType: Self.self,
