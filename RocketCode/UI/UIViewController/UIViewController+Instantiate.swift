@@ -8,7 +8,7 @@
 import UIKit
 
 public extension UIViewController {
-    static func intanceFromNib(nibName: String? = nil, bundle: Bundle = .main) -> Self {
+    static func instanceFromNib(nibName: String? = nil, bundle: Bundle = .main) -> Self {
         let nibName = nibName ?? String(describing: Self.self)
         return Self(nibName: nibName, bundle: bundle)
     }
