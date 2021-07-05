@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13, *)
 @IBDesignable
 open class VerticalButton: UIButton {
     @IBInspectable
