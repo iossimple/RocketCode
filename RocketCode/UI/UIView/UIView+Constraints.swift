@@ -149,4 +149,34 @@ public extension UIView {
         NSLayoutConstraint.activate(constraints)
     }
     
+    func centerToSuperviewSafeArea(insets: CGPoint = .zero) {
+        guard let superview = superview else { return }
+        centerToSafeArea(of: superview, with: insets)
+    }
+    
+    func centerToSafeArea(of view: UIView, with insets: CGPoint = .zero) {
+        let safeArea = view.safeAreaLayoutGuide
+        centerTo(
+            centerX: safeArea.centerXAnchor,
+            centerY: safeArea.centerYAnchor,
+            insets: insets
+        )
+    }
+    
+    func pinToSuperviewSafeArea(insets: UIEdgeInsets = .zero) {
+        guard let superview = superview else { return }
+        pinToSafeArea(of: superview, with: insets)
+    }
+    
+    func pinToSafeArea(of view: UIView, with insets: UIEdgeInsets = .zero) {
+        let safeArea = view.safeAreaLayoutGuide
+        
+        pinTo(
+            top: safeArea.topAnchor,
+            left: safeArea.leftAnchor,
+            bottom: safeArea.bottomAnchor,
+            right: safeArea.rightAnchor,
+            insets: insets
+        )
+    }
 }

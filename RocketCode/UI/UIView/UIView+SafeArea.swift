@@ -6,6 +6,7 @@ public extension UIView {
     }
     
     var safeBounds: CGRect {
+        // TOOD: consider safeAreaLayoutGuide.layoutFrame
         return bounds.inset(by: safeAreaInsets)
     }
 }
